@@ -15,7 +15,7 @@ import hiplot as hip
 import networkx as nx
 from streamlit_option_menu import option_menu
 from PIL import Image
-flight_df = pd.read_csv('/Users/radhikavittalshenoy/Downloads/flight_pass_df.csv')
+flight_df = pd.read_csv('passenger_exp_train.csv')
 #selection = st.sidebar.selectbox("Page View", ["Dashboard", "Analysis Page","Advanced Analysis"])
 #st.set_page_config(page_title="Flyhigh", layout="wide")
 st.set_page_config(layout="wide")
@@ -106,7 +106,7 @@ elif selected == "Overall Airline Stats":
     #fig.update_layout(title_text='Overall passenger satisfaction at FlyHigh Airlines', title_font=dict(size=15, family='Verdana'))
 
 
-    flight_df = pd.read_csv('/Users/radhikavittalshenoy/Downloads/archive-2/passenger_exp_train.csv')
+    flight_df = pd.read_csv('passenger_exp_train.csv')
     gender_counts = flight_df['Gender'].value_counts()
     gender_percentage = (gender_counts / len(flight_df)) * 100
     fig2 = plt.figure(
