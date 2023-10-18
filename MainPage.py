@@ -1,9 +1,6 @@
 import streamlit as st 
 #st.set_page_config(layout="wide")
-def redirect_to_streamline():
-    # Run the other Streamlit script for the streamline page
-    import subprocess
-    subprocess.run(["streamlit", "run", "CMSE_project_passengerSatisfaction.py"])
+
 
 image1_url = '''
     <style>
@@ -42,8 +39,10 @@ with st.form(key='login_form'):
                     st.error('Please accept that you are an employeed FlyHigh member')
                 if checkbox_val:
                     if login_button:
-                        redirect_to_streamline()  
                         st.success("Login successful!")
+                        st.markdown(f'<a href="https://cmseproject-3pttvdumrkrn8bxu2szg7a.streamlit.app"><button>Go to the Authorised website</button> </a>', unsafe_allow_html=True):
+    
+                        
                                 
 
 
