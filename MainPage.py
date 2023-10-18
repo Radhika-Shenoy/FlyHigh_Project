@@ -17,6 +17,8 @@ st.markdown('<h1 style="color:black;font-size:35px;text-align:left;margin-left:2
 with st.form(key='login_form'):
     st.subheader('Login Credentials')
     username = st.text_input('**Enter your FlyHigh userID:**')
+    st.markdown('Default username: user')
+    st.markdown('Default password: password')
     password = st.text_input('**Enter your FlyHigh password:**', type='password')
     
     st.markdown('Disclaimer!:')
