@@ -18,8 +18,9 @@ with st.form(key='login_form'):
     st.subheader('Login Credentials')
     username = st.text_input('**Enter your FlyHigh userID:**')
     st.markdown('Default username: user')
-    st.markdown('Default password: password')
+    
     password = st.text_input('**Enter your FlyHigh password:**', type='password')
+    st.markdown('Default password: password')
     
     st.markdown('Disclaimer!:')
     st.markdown('Certain sections of the web app contain sensitive FlyHigh brand data and passenger survey information. Kindly refrain from accessing this information if you are not an authorized FlyHigh team member. Unauthorized access will be subject to penalties.')
