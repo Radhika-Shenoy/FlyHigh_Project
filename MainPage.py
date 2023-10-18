@@ -39,10 +39,8 @@ with st.form(key='login_form'):
                     st.error('Please accept that you are an employeed FlyHigh member')
                 if checkbox_val:
                     if login_button:
-                        
-                        st.markdown(f'<a href="https://cmseproject-3pttvdumrkrn8bxu2szg7a.streamlit.app"><button>Go to the Authorised website</button> </a>', unsafe_allow_html=True)
-    
-                        
+                        st.sucess('Login Successful!')
+                        st.markdown(f'<a href="https://cmseproject-3pttvdumrkrn8bxu2szg7a.streamlit.app"><button>Go to the Authorised website</button></a>', unsafe_allow_html=True)                  
                                 
 
 
