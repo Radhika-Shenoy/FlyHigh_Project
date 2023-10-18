@@ -2,7 +2,6 @@ import streamlit as st
 #st.set_page_config(layout="wide")
 def redirect_to_streamline():
     # Run the other Streamlit script for the streamline page
-    #st.markdown('I am here')
     import subprocess
     subprocess.run(["streamlit", "run", "CMSE_project_passengerSatisfaction.py"])
 
