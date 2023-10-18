@@ -1,4 +1,3 @@
-pip==23.3
 pandas
 matplotlib
 seaborn
@@ -10,5 +9,5 @@ hiplot
 pillow
 networkx
 streamlit_option_menu
-subprocess
+
 
