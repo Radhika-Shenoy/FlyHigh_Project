@@ -1,0 +1,8 @@
+pandas
+matplotlib
+seaborn
+plotly
+statsmodels
+pywaffle
+numpy
+hiplot
