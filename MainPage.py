@@ -4,7 +4,7 @@ def redirect_to_streamline():
     # Run the other Streamlit script for the streamline page
     #st.markdown('I am here')
     import subprocess
-    subprocess.run(["streamlit", "run", "/Users/radhikavittalshenoy/Documents/CMSE_project_passengerSatisfaction.py"])
+    subprocess.run(["streamlit", "run", "CMSE_project_passengerSatisfaction.py"])
 
 image1_url = '''
     <style>
