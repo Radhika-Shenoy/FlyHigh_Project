@@ -40,7 +40,7 @@ with st.form(key='login_form'):
                 if checkbox_val:
                     if login_button:
                         st.success("Login successful!")
-                        st.markdown(f'<a href="https://cmseproject-3pttvdumrkrn8bxu2szg7a.streamlit.app"><button>Go to the Authorised website</button> </a>', unsafe_allow_html=True):
+                        st.markdown(f'<a href="https://cmseproject-3pttvdumrkrn8bxu2szg7a.streamlit.app"><button>Go to the Authorised website</button> </a>', unsafe_allow_html=True)
     
                         
                                 
