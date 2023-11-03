@@ -1,6 +1,4 @@
 import streamlit as st 
-#st.set_page_config(layout="wide")
-
 
 image1_url = '''
     <style>
@@ -14,6 +12,7 @@ image1_url = '''
 st.markdown(image1_url, unsafe_allow_html=True)
 st.markdown('<h1 style="color:black;font-size:35px;text-align:left;margin-left:20px;">FlyHigh Airlines</h1>', unsafe_allow_html=True)
 
+#Login form for initial login page
 with st.form(key='login_form'):
     st.subheader('Login Credentials')
     username = st.text_input('**Enter your FlyHigh userID:**')
@@ -24,17 +23,14 @@ with st.form(key='login_form'):
     
     st.markdown('Disclaimer!:')
     st.markdown('Certain sections of the web app contain sensitive FlyHigh brand data and passenger survey information. Kindly refrain from accessing this information if you are not an authorized FlyHigh team member. Unauthorized access will be subject to penalties.')
-    #a_click = st.checkbox('Agree')
     checkbox_val = st.checkbox("**I am an employed FlyHigh member**") 
     login_button = st.form_submit_button('Login')
-    #if not a_click:
-        #st.warning('Please accept agree')
-    #if a_click:  
     if login_button:
         if not username or not password:
             st.error("Please enter the credentials to login")
     if login_button:
         if username and password:
+            # Based on the credentials login is redirected
             if not (username == 'user' and password == 'password'):
                 st.error("Invalid username/ password")
             if (username == 'user' and password == 'password'):
