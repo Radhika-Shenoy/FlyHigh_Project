@@ -17,7 +17,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 
 #Load the dataset
-flight_df = pd.read_csv('/Users/radhikavittalshenoy/Downloads/archive-2/passenger_exp_train.csv')
+flight_df = pd.read_csv('passenger_exp_train.csv')
 
 #Imputation is performed on the Arrival Delay in Minutes column where N/A values is filled with zero
 #The assumption that the people who have filled the survey didn't experience arrival delay
