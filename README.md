@@ -4,6 +4,9 @@ This website is intended for the Manager and members from the Research and Devel
 # Dataset info:
 The dataset passenger_exp_train.csv was obtained from Kaggle website. It has around 103904 survey records and 25 features to gauge the passenger's travel satisfaction levels.
 
+# Libraries used:
+The requirements.txt file has all the libraries imported to for the achieve the webapp's functionalities.
+
 # MainPage.py:
 The MainPage.py file has the code for the intial admin login. After entering the credentials and clicking on login, on clicking on the 'Go to authorized webpage' button, he will be redirected to the website where he can get further brand information.
 username:user,password:password
